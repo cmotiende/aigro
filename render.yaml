@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: ai-gro
+    env: python
+    buildCommand: ""
+    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
+    envVars:
+      - key: TOGETHER_API_KEY
+        value: 29ded3e019d2f3cf7cb93e178443d80040d8bd6ce209ec836bd943174451a340
